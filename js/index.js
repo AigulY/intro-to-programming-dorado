@@ -33,4 +33,62 @@ for (var i = 0; i<skills.length; i++){
     
     //append skill element to the skillsList element
     skillsList.appendChild(skill);
-}
+};
+
+//HW 4.3
+
+//Handle Message Form Submit
+var messageForm = document.getElementById("leave_message");
+
+console.log(messageForm[0], "this is the form");
+
+messageForm.addEventListener("submit", function(event) {
+    //to prevent the default refreshing behavior of the "submit" event
+    event.preventDefault();
+
+    //Inside the callback function for your event listener, create a new variable for each of the three form fields and retrieve the value from the event
+    var theMessageForm = event.target;
+
+    var nameValue = event.target.name.value;
+    var emailValue = event.target.email.value;
+    var messageValue = event.target.message.value;
+
+    console.log(nameValue);
+    console.log(emailValue);
+    console.log(messageValue);
+    
+    //Display Messages in List
+    var messageSection = document.getElementById("messages");
+    var messageList = messageSection.querySelector("ul");
+    var newMessage = document.createElement("li");
+
+    newMessage.innerHTML = `
+    <a href="mailto: ${emailValue}"> ${nameValue}</a>
+    <span>${messageValue}</span>
+    `;
+
+    //adding messages to the list
+    messageList.appendChild(newMessage);
+
+    //Create a new <button> element and store it in a variable named removeButton
+    var removeButton = document.createElement("button");
+    removeButton.innerHTML = "Remove";
+    removeButton.setAttribute("type", "button")
+    removeButton.addEventListener("click", function(event){
+        event.preventDefault();
+        var entry = removeButton.parentNode;
+        entry.remove();
+
+        //function call to hide or show message list when click remove button
+        //hideShow();
+
+    })
+
+    //Append the removeButton to the newMessage element
+    newMessage.appendChild(removeButton);
+    //Append the newMessage to the messageList element
+    messageList.appendChild(newMessage);
+
+    //clear the form
+    event.target.reset();
+});
