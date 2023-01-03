@@ -1,0 +1,150 @@
+
+  body {
+    background-color: rgb(248, 235, 239);
+    color: rgb(65, 64, 64);
+    font-family: "verdana", sans-serif;
+    font-size: 100%;
+    background-image: url('https://i.pinimg.com/564x/07/fd/62/07fd62bb9df0f7176c000ef2a6792d01.jpg')
+    }
+
+  section {
+    margin: -3% 5%;
+    padding: 2% 4%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "brush script MT", cursive;
+    font-size: 2em;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    margin-bottom: 1%;
+  }
+
+  button {
+    font-size: 1em;
+    background-color: rgb(199, 194, 198);
+    border-color: rgba(95, 94, 94, 0.493);
+    border-radius: 0.3em;
+
+  }
+  button:hover {
+    background-color: purple;
+    color: white;
+    }
+    
+  footer {
+    margin: 1%;
+    border-top: solid rgb(105, 104, 105);
+    padding: 1%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  footer:hover {
+    background-color: rgb(133, 101, 127);
+    }
+    
+   #about {
+    margin: 3% 5% 5%;
+    border-style: solid;
+    border-color: orange;
+    border-bottom: none;
+    text-align: center;
+    font-family: "Monoton", cursive;
+    font-size: 1em;
+  }
+  #experience {
+    margin: 5% 5%;
+    border-style: solid;
+    border-color: blue;
+    border-bottom: none;
+    color: rgb(36, 70, 142);
+    text-align: center;
+  }
+  #experience ul li {
+    display: inline-flexbox;
+    text-align: center;
+  }
+  #skills {
+    margin: 5% 5%;
+    border-style: solid;
+    border-color: yellow;
+    border-bottom: none;
+    text-align: center;
+  }
+  #skills ul li {
+    display: inline-block;  
+    padding: 1%;
+    text-align: center;
+  }
+  #contact {
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 5px;
+    background-color: #dbc2d4;
+    border-radius: 1.0em;
+}
+
+  #contact ul li {
+    color: rgb(1, 43, 134);
+  }
+
+  #messageform {
+    padding: -5px;
+    font-family: "georgia", serif;
+    color: rgb(140, 87, 156);
+    border-radius: 1.0em;
+  }
+
+  input {
+    color: #461842;
+    background-color: #f8d8f7;
+    border-radius: 0.5em;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    border-left: 1px dotted;
+    border-right: 1px dotted;
+    padding: 0.5em;
+}
+
+  textarea {
+    background-color: #f8d8f7;
+    border-radius: 0.5em;
+    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    border-left: 1px dotted;
+    border-right: 1px dotted;
+    padding: 0.5em;
+    }
+
+  #messages {
+    font-family: "georgia", serif;
+    color: rgb(140, 87, 156);
+    }
+
+  #messages ul li {
+    text-align: left;
+  }
+
+  label {
+    color: rgb(1, 43, 134);
+    font-family: "georgia", serif;
+    font-size: 16px;
+}
+
+  a:link {
+    color: rgb(64, 9, 165);
+  }
+  a:visited {
+    color: rgb(64, 9, 165);
+  }
+
+  a:hover,
+  a:active {
+    color: purple;
+  }
+    
