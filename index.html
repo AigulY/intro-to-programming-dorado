@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Developer portfolio </title>
         <meta charset="UTF-8">
-        <meta name="description" content="My Code the Dream journey">
-        <meta name="keywords" content="JavaScript">
-        <meta name="author" content="AigulY">
-
-     <link href="css/index.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Developer portfolio</title>
+        <meta name="description" content="My Code the Dream journey" />
+        <meta name="keywords" content="JavaScript" />
+        <meta name="author" content="AigulY" />
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
-        <section id="about"> 
-            <h2>A BIT ABOUT ME</h2>
-            <h3>Hey, I am Aigul.</h3> 
-                <dl>
-                <dt>I have started my JS learning journey 2 months ago with Code The Dream School.</dt> 
-                    <dd>  This will be my first step in building my portfolio in Web Development, as a portfolio is also as 
-                        important as a resume itself. A portfolio is our second online presence and 
-                        can easily tell people about what kind of person you are and what kind of thing you do. </dd>
-                <dt>Summary </dt>
-                    <dd>I have years of experience in FMCG companies with expertise in supply network operation, marketing, 
-                        communications and portfolio management.</dd>
-                </dl>
-        </section>
- 
-        <section id="experience">
-                <h2>MY EXPERIENCE</h2>
-                
-                    <ul>
-                        <li>S&OP</li>
-                        <li>Supply planning</li>
-                        <li>Demand planning</li>
-                        <li>Forecasting</li>
-                        <li>Artwork process management</li>
-                        <li>Online marketing</li>
-                        <li>Safety management</li>
+        <header>
+            <div class="blocks">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu_item" id="menu_item_name">
+                            <strong><a class="link_menu" href="https://github.com/AigulY">Aigul Y Designer</a>
+                        </li>
                     </ul>
-        </section>
-        <section id = "skills">
-            <h2>MY FUTURE SKILLS</h2>
-            <ul></ul>
-        </section>
-        <section id="contact">
-                <h2>CONTACT ME</h2>
-                <dl><a href="https://github.com/AigulY">My github link</a>
-        </section>
-        <section id="messageform">
-            <h3>LEAVE A MESSAGE</h3>
-            <form id="leave_message">
-                <div>
-                    <label for="name">Your Name</label>
+                    <ul class="menu">
+                        <li class="menu" id="menu_item_about">
+                            <a class="menu" id="menu_item_about" href="#about">About</a>
+                        </li>
+                        <li class="menu" id="menu_item_experience">
+                            <a class="menu" id="menu_item_experience" href="#experience">Experience</a>
+                        </li>
+                        <li class="menu" id="menu_item_skills">
+                            <a class="menu" id="menu_item_skills" href="#skills">Skills</a>
+                        </li>
+                        <li class="menu" id="menu_item_contact">
+                            <a class="menu" id="menu_item_contact" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <div class="blocks">
+                <h1 class="page_name">Developer's Portfolio</h1>
+                <section id="about"> 
+                    <h2>ABOUT ME</h2>
+                        <h3><strong>Hey, I am Aigul.</strong></h3> 
+                        <p> I have started my JS learning journey 4 months ago with Code The Dream School.</dt> 
+                        This will be my first step in building my portfolio in Web Development, as a portfolio is also as 
+                        important as a resume itself. A portfolio is our second online presence and 
+                        can easily tell people about what kind of person you are and what kind of thing you do.</p>
+                </section>
+                <section id="experience">
+                    <h2>EXPERIENCE</h2>
+                    <ul>
+                        <li class="card">
+                            <span>
+                                <strong>Supply chain and initiative planning</strong> - P&G CCAR
+                            </span>
+                            <span>
+                                <span class="years">Jan 2006 - Feb 2009</span>
+                        </li>
+                        <li class="card">
+                            <span>
+                                <strong>Artwork process management</strong> - P&G CCAR
+                            </span>
+                            <span>
+                                <span class="years">Feb 2009 - Jun 2010</span>
+                        <li class="card">
+                            <span>
+                                <strong>Demand management and Forecasting</strong> - P&G CCAR
+                            </span>
+                            <span>
+                                <span class="years">Jun 2010 - Aug 2013</span>
+                        <li class="card">
+                            <span>
+                                <strong>Logistics, marketing and sales</strong> - Sovico
+                            </span>
+                            <span>
+                                <span class="years">Aug 2013 - Sep 2017</span>
+                        <li class="card">
+                            <span>
+                                <strong>Marketing and communication</strong> - Nuris
+                            </span>
+                            <span>
+                                <span class="years">May 2017 - Jun 2021</span>
+                        <li class="card">
+                            <span>
+                                <strong>Safety management in Logistics&Transportation</strong> - Mayzlin
+                            </span>
+                            <span>
+                                <span class="years">Aug 2022 - Present</span>
+                    </ul>
+                </section>
+                <section id = "skills">
+                    <h2>FUTURE SKILLS</h2>
+                    <ul role="list"></ul>
+                </section>
+                 <section id="contact">
+                    <h2>CONTACT ME</h2>
+                    <a class=contact_link href="https://github.com/AigulY">My github Link</a>
+                </section>
+                <section id="messageform">
+                    <h2>LEAVE A MESSAGE</h2>
+                    <form id="leave_message">
+                    <div class="feedback">
+                    <label for="name">Name</label>
                     <br><input type="text" id="name" placeholder="Full Name" name="name" required></br>
-                </div>
-                <div>
-                    <label for="email">Your Email</label>
+                    </div>
+                    <div class="feedback">
+                    <label for="email">Email</label>
                     <br><input type="text" id="email" placeholder="email@gmail.com" name="email" required></br>
-                </div>
-                <div>
-                    <label for="textarea">Your message</label>
+                    </div>
+                    <div class="feedback_message">
+                    <label for="textarea">Message</label>
                     <br><textarea id="message" name="message" required></textarea></br>
                 </div>
                 <div>
@@ -68,15 +120,15 @@
         <br></br>
         <section id="messages">
             <h2>MESSAGES</h2>
-            <ul></ul>
+            <ul class="list"></ul>
         </section>
-        <section>
-        <br></br>
+        </div>
+        </main>
         <footer>
+            <div class="blocks"></div>
         </footer>
         </section>
         <script src="js/index.js"></script>
         
     </body>
 </html>
-

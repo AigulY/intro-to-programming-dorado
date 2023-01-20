@@ -14,7 +14,7 @@ document.querySelector('footer').innerHTML = "@" + "Aigul Y " + thisYear;
 footer.appendChild(copyright);
 
 //listing skills by creating an array of string values in the var skills
-var skills = ["Javascript", "PHP", "HTML", "CSS", "TypeScript", "React", "NodeJs", "Next", "JNextJs", "MySQL", "GIT", "C#"]
+var skills = ["Javascript", "HTML", "CSS", "TypeScript", "React", "NodeJs", "MySQL", "GIT", "Next"]
 
 //using "DOM selection" selecting the #skills section by ID and store in var skillsSection using getElementbyID
 var skillsSection = document.getElementById ("skills");
@@ -79,11 +79,8 @@ messageForm.addEventListener("submit", function(event) {
         var entry = removeButton.parentNode;
         entry.remove();
 
-        //function call to hide or show message list when click remove button
-        //hideShow();
-
     })
-
+    
     //Append the removeButton to the newMessage element
     newMessage.appendChild(removeButton);
     //Append the newMessage to the messageList element
