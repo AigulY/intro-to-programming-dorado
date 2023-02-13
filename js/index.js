@@ -8,13 +8,13 @@ var footer = document.querySelector('footer');
 var copyright = document.createElement('p');
 
 //adding elements to the copyright elements
-document.querySelector('footer').innerHTML = "@" + "Aigul Y " + thisYear;
+document.querySelector('footer').innerHTML = "@ " + "AIGUL YEDIGEYEVA " + thisYear;
 
 //appending copywrite elements to the footer
 footer.appendChild(copyright);
 
 //listing skills by creating an array of string values in the var skills
-var skills = ["Javascript", "HTML", "CSS", "TypeScript", "React", "NodeJs", "MySQL", "GIT", "Next"]
+var skills = ["Javascript", "HTML", "CSS", "React", "NodeJs", "MySQL", "GIT", "Next"]
 
 //using "DOM selection" selecting the #skills section by ID and store in var skillsSection using getElementbyID
 var skillsSection = document.getElementById ("skills");
@@ -72,7 +72,7 @@ messageForm.addEventListener("submit", function(event) {
 
     //Create a new <button> element and store it in a variable named removeButton
     var removeButton = document.createElement("button");
-    removeButton.innerHTML = "Remove";
+    removeButton.innerHTML = "REMOVE";
     removeButton.setAttribute("type", "button")
     removeButton.addEventListener("click", function(event){
         event.preventDefault();

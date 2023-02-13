@@ -15,38 +15,55 @@
                 <nav class="nav">
                     <ul class="menu">
                         <li class="menu_item" id="menu_item_name">
-                            <strong><a class="link_menu" href="https://github.com/AigulY">Aigul Y Designer</a>
+                            <strong><a class="link_menu" href="https://github.com/AigulY">AIGUL YEDIGEYEVA</a>
                         </li>
                     </ul>
                     <ul class="menu">
                         <li class="menu" id="menu_item_about">
-                            <a class="menu" id="menu_item_about" href="#about">About</a>
+                            <a class="menu" id="menu_item_about" href="#about">ABOUT</a>
                         </li>
                         <li class="menu" id="menu_item_experience">
-                            <a class="menu" id="menu_item_experience" href="#experience">Experience</a>
+                            <a class="menu" id="menu_item_experience" href="#experience">EXPERIENCE</a>
                         </li>
                         <li class="menu" id="menu_item_skills">
-                            <a class="menu" id="menu_item_skills" href="#skills">Skills</a>
+                            <a class="menu" id="menu_item_skills" href="#skills">SKILLS</a>
                         </li>
-                        <li class="menu" id="menu_item_contact">
-                            <a class="menu" id="menu_item_contact" href="#contact">Contact</a>
+                        <li class="menu" id="menu_item_projects">
+                            <a class="menu" id="menu_item_projects" href="#projects">PROJECTS</a>
+                        </li>
+                        <li class="menu" id="menu_item_contactme">
+                            <a class="menu" id="menu_item_contactme" href="#contactme">CONTACTS</a>
                         </li>
                     </ul>
                 </nav>
             </div>
+        </nav>
         </header>
         
         <main>
-            <div class="blocks">
+            <div class="aboutme">
                 <h1 class="page_name">Developer's Portfolio</h1>
-                <section id="about"> 
+                <section class="about"> 
                     <h2>ABOUT ME</h2>
                         <h3><strong>Hey, I am Aigul.</strong></h3> 
-                        <p> I have started my JS learning journey 4 months ago with Code The Dream School.</dt> 
+                        <p> I have started my JS learning journey 6 months ago with Code The Dream School.</dt> 
                         This will be my first step in building my portfolio in Web Development, as a portfolio is also as 
                         important as a resume itself. A portfolio is our second online presence and 
                         can easily tell people about what kind of person you are and what kind of thing you do.</p>
                 </section>
+
+                <section class="imageside">
+                    <img alt="codewoman" src="C:\Users\Aigul\Downloads\Пост VK Как Выбрать Крем Минимализм Современный Белый Черный.png" style="width: 700px" >
+                </section>
+                <section class="rectangle">
+                </section>
+            </div>
+            <div class="blocks">   
+                <section id = "skills">
+                    <h2>FUTURE SKILLS</h2>
+                    <ul role="list"></ul>
+                </section>   
+
                 <section id="experience">
                     <h2>EXPERIENCE</h2>
                     <ul>
@@ -89,14 +106,23 @@
                                 <span class="years">Aug 2022 - Present</span>
                     </ul>
                 </section>
-                <section id = "skills">
-                    <h2>FUTURE SKILLS</h2>
-                    <ul role="list"></ul>
+
+                <section id="projects">
+                    <h2>PROJECTS</h2>
+                    <a class=projects_link href="https://github.com/AigulY" target="_blank">MY GITHAB LINK</a>
                 </section>
-                 <section id="contact">
+
+                <section id="contactme">
                     <h2>CONTACT ME</h2>
-                    <a class=contact_link href="https://github.com/AigulY">My github Link</a>
+                    <h2 style="padding-bottom:30px"></h2>
+                    <a class="social-icon" href="https://www.linkedin.com/in/aigul-yedigeyeva" target="_blank" style="color:rgba(249, 166, 2)">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a class="social-icon" href="https://www.youtube.com/watch?v=Hskt1jN7JTc" target="_blank" style="color:rgba(249, 166, 2)">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
                 </section>
+                
                 <section id="messageform">
                     <h2>LEAVE A MESSAGE</h2>
                     <form id="leave_message">
@@ -113,22 +139,25 @@
                     <br><textarea id="message" name="message" required></textarea></br>
                 </div>
                 <div>
-                    <br><button id="submit" type="submit">Submit</button></br>
+                    <br><button id="submit" type="submit">SUBMIT</button></br>
                 </div>
             </form>
         </section>
         <br></br>
+       
         <section id="messages">
             <h2>MESSAGES</h2>
             <ul class="list"></ul>
         </section>
         </div>
+
         </main>
         <footer>
-            <div class="blocks"></div>
+
         </footer>
         </section>
         <script src="js/index.js"></script>
-        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
