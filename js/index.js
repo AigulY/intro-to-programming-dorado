@@ -89,3 +89,24 @@ messageForm.addEventListener("submit", function(event) {
     //clear the form
     event.target.reset();
 });
+
+var githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/AigulY/repos');
+githubRequest.send();
+
+githubRequest.onload = function(){
+    var repositories = JSON.parse(this.response);
+    console.log(repositories);
+
+    var projectSection = document.getElementById('projects');
+
+    var projectList = projectSection.querySelector('ul');
+
+    for (i=0; i<repositories.length; i++){
+        var project = document.createElement('li');
+        project.innerHTML = '<a href="https://www.github.com/AigulY?tab/${repositories[i].name}">' + repositories[i].name + '</a>';
+        projectList.appendChild(project);
+    }
+}
+
+
