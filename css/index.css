@@ -225,6 +225,7 @@
         margin-top: 2em;
         margin-bottom: 2em;
         background-color: rgb(255 243 234);
+        line-height: 2;
       }
 
       a {
@@ -262,8 +263,6 @@
         display: flex;
         flex-direction:column
       }
-      .imageside {
-        width: auto;
-      }
+
 
     }

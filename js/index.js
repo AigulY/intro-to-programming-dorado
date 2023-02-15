@@ -90,6 +90,8 @@ messageForm.addEventListener("submit", function(event) {
     event.target.reset();
 });
 
+//HW 6.1
+
 /*var githubRequest = new XMLHttpRequest();
 githubRequest.open('GET', 'https://api.github.com/users/AigulY/repos');
 githubRequest.send();
@@ -108,6 +110,8 @@ githubRequest.onload = function(){
         projectList.appendChild(project);
     }
 }*/
+
+//HW 6.2
 
 fetch('https://api.github.com/users/AigulY/repos')
 .then(response => response.json())
