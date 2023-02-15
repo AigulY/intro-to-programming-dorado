@@ -13,7 +13,7 @@
     font-size: 100%;
     justify-content: space-between;
     position: sticky;
-    background-color: rgb(60, 108, 117);
+    background-color: rgb(40 15 11);
   }
 
   .blocks {
@@ -40,7 +40,7 @@
   }
    
   a.menu:hover {
-      font-size: 103%;
+      padding-top: 0.5em;
       color: rgb(249, 166, 2);
   }
 
@@ -87,8 +87,10 @@
       max-width: 1024px;
       display: flex;
       flex-direction: row;
+      text-align: justify;
+      line-height: 1.7;
     }
-    section#about {
+    #about {
       padding-bottom: 20%;
       width: 50%;
       vertical-align: auto;
@@ -133,14 +135,14 @@
     margin-right: 3%;
   }
 
-  section#messageform {
+  #messageform {
     background-color: rgb(225, 244, 244);
   }
   div.feedback{
     background-color: rgb(225, 244, 244);
   }
 
-  .projects_link {
+  .myGithub_link {
     display: inline-block;
     color: rgba(249, 166, 2);
     padding: 3%;
@@ -175,7 +177,7 @@
 
   button {
     background-color: rgb(87, 144, 154);
-    padding: 1.1%;
+    padding: 1%;
     border-color: rgba(95, 94, 94, 0.5);
     border-radius: 0.3em;
     
@@ -195,7 +197,7 @@
       font-size: 80%;
       text-align: center;
       padding: 1%;
-      background-color: rgb(60, 108, 117);
+      background-color: rgb(40 15 11);
       color: whitesmoke;
     }
 
@@ -218,6 +220,20 @@
       padding: 20px;
       width: 100%;
       }
+
+      #projects {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        background-color: rgb(255 243 234);
+      }
+
+      a {
+        text-decoration:none;
+      }
+
+      a:hover {
+        color: rgb(249, 166, 2);
+    }
 
   @media screen and (max-width: 660px) {
     .menu--hide-mobile {
