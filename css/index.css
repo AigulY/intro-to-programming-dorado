@@ -88,6 +88,8 @@
       max-width: 1024px;
       display: flex;
       flex-direction: row;
+      text-align: justify;
+      line-height: 1.7;
     }
     #about {
       padding-bottom: 20%;
@@ -176,7 +178,7 @@
 
   button {
     background-color: rgb(87, 144, 154);
-    padding: 1.1%;
+    padding: 1%;
     border-color: rgba(95, 94, 94, 0.5);
     border-radius: 0.3em;
     
@@ -232,8 +234,7 @@
 
       a:hover {
         color: rgb(249, 166, 2);
-        
-    }
+
 
   @media screen and (max-width: 660px) {
     .menu--hide-mobile {
