@@ -91,6 +91,8 @@ messageForm.addEventListener("submit", function(event) {
 });
 
 
+//HW 6.1
+
 /*var githubRequest = new XMLHttpRequest();
 
 var githubRequest = new XMLHttpRequest();
@@ -113,6 +115,8 @@ githubRequest.onload = function(){
     }
 lesson-6-2
 }*/
+
+//HW 6.2
 
 fetch('https://api.github.com/users/AigulY/repos')
 .then(response => response.json())
