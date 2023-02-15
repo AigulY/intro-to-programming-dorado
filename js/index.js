@@ -90,7 +90,11 @@ messageForm.addEventListener("submit", function(event) {
     event.target.reset();
 });
 
+
 /*var githubRequest = new XMLHttpRequest();
+
+var githubRequest = new XMLHttpRequest();
+
 githubRequest.open('GET', 'https://api.github.com/users/AigulY/repos');
 githubRequest.send();
 
@@ -107,6 +111,7 @@ githubRequest.onload = function(){
         project.innerHTML = '<a href="https://www.github.com/AigulY?tab/${repositories[i].name}">' + repositories[i].name + '</a>';
         projectList.appendChild(project);
     }
+lesson-6-2
 }*/
 
 fetch('https://api.github.com/users/AigulY/repos')
@@ -127,3 +132,8 @@ fetch('https://api.github.com/users/AigulY/repos')
 .catch((error) => {
     console.error("Error:", error);
 });
+
+
+
+
+
