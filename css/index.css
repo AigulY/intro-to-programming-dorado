@@ -37,7 +37,6 @@
       width: 100%;
       font-size: auto;
       color: whitesmoke;
-      text-decoration: none;
   }
    
   a.menu:hover {
@@ -235,7 +234,7 @@
 
       a:hover {
         color: rgb(249, 166, 2);
-
+    }
 
   @media screen and (max-width: 660px) {
     .menu--hide-mobile {
@@ -263,7 +262,8 @@
       .aboutme{
         display: flex;
         flex-direction:column
+      
       }
 
 
-    }}
+    }
